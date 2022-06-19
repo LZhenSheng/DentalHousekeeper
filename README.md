@@ -27,7 +27,7 @@
 
 ![1655494134977](https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/13.jpg)
 
-![1655494134977](https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/14.jpg)
+<img src="https://github.com/仓库名/项目名/blob/master/m/20200424230936851.png" width="200" height="200" alt="抖音小程序"/><br/>
 
 ![1655494134977](https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/15.jpg)
 
