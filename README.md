@@ -37,15 +37,13 @@
 
 <img src="https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/19.jpg" width="400"/>
 
-![1655494134977](https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/20.jpg)
+<img src="https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/20.jpg" width="400"/>
 
-![1655494134977](https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/21.png)
+<img src="https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/21.png" width="400"/>
 
-![1655494134977](https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/22.png)
+<img src="https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/22.png" width="400"/>
 
-![1655494134977](https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/23.jpg)
-
-![1655494134977](https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/24.jpg)
+<img src="https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/24.jpg" width="400"/>
 
 ## 不足之处
 （1）Android和Windows端使用的都是原生UI，界面一般--------Android可以使用XUI和QUMI，Windows端可以使用fx-falsework（发现了问题，但已经是毕设后期，重新改UI不太现实）
