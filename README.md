@@ -21,12 +21,11 @@
 
 <img src="https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/11.jpg" width="700"/>
 
+<img src="https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/12.jpg" width="700"/>
 
-![1655494134977](https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/12.jpg)
+<img src="https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/13.jpg" width="700"/>
 
-![1655494134977](https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/13.jpg)
-
-<img src="https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/14.jpg" width="300"/>
+<img src="https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/14.jpg" width="700"/>
 
 ![1655494134977](https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/15.jpg)
 
