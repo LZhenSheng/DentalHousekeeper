@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="547.0" prefWidth="970.0" styleClass="panel" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.UpdateDoctorController">
+    <children>
+        <Label layoutX="425.0" layoutY="27.0" prefHeight="49.0" prefWidth="156.0" styleClass="panel-title" text="更新牙医信息">
+            <font>
+                <Font size="25.0" />
+            </font>
+        </Label>
+        <TextField fx:id="name" layoutX="213.0" layoutY="76.0" prefHeight="36.0" prefWidth="191.0" style="-fx-alignment: center; -fx-background-radius: 5;" />
+        <TextField fx:id="phone" layoutX="642.0" layoutY="76.0" prefHeight="36.0" prefWidth="215.0" style="-fx-alignment: center; -fx-background-radius: 5;" />
+        <TextField fx:id="password" layoutX="213.0" layoutY="130.0" prefHeight="36.0" prefWidth="191.0" style="-fx-alignment: center; -fx-background-radius: 5;" />
+        <TextField fx:id="sex" layoutX="642.0" layoutY="126.0" prefHeight="36.0" prefWidth="215.0" style="-fx-alignment: center; -fx-background-radius: 5;" />
+        <TextField fx:id="email" layoutX="643.0" layoutY="185.0" prefHeight="36.0" prefWidth="215.0" style="-fx-alignment: center; -fx-background-radius: 5;" />
+        <TextField fx:id="grade" layoutX="213.0" layoutY="241.0" prefHeight="36.0" prefWidth="191.0" style="-fx-alignment: center; -fx-background-radius: 5;" />
+        <ImageView fx:id="imageViwe" fitHeight="155.0" fitWidth="162.0" layoutX="164.0" layoutY="331.0" onMouseClicked="#updateImage" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@drawable/add.png" />
+            </image>
+        </ImageView>
+        <Label layoutX="124.0" layoutY="290.0" prefHeight="49.0" prefWidth="79.0" text="牙医照片" />
+        <TextArea fx:id="description" layoutX="645.0" layoutY="241.0" prefHeight="203.0" prefWidth="215.0" promptText="简介" wrapText="true" />
+      <JFXButton layoutX="330.0" layoutY="479.0" onAction="#add" prefHeight="36.0" prefWidth="242.0" text="更新">
+         <styleClass>
+            <String fx:value="btn" />
+            <String fx:value="btn-info" />
+         </styleClass>
+      </JFXButton>
+      <MenuButton fx:id="type" layoutX="213.0" layoutY="187.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="191.0" text="请选择" />
+      <Label layoutX="119.0" layoutY="176.0" prefHeight="54.0" prefWidth="130.0" text="所属科室：" />
+      <Label layoutX="124.0" layoutY="65.0" prefHeight="54.0" prefWidth="130.0" text="牙医姓名：" />
+      <Label layoutX="124.0" layoutY="117.0" prefHeight="54.0" prefWidth="130.0" text="牙医密码：" />
+      <Label layoutX="120.0" layoutY="231.0" prefHeight="54.0" prefWidth="130.0" text="牙医职称：" />
+      <Label layoutX="543.0" layoutY="67.0" prefHeight="54.0" prefWidth="130.0" text="牙医账号：" />
+      <Label layoutX="543.0" layoutY="116.0" prefHeight="54.0" prefWidth="130.0" text="牙医性别：" />
+      <Label layoutX="543.0" layoutY="176.0" prefHeight="54.0" prefWidth="130.0" text="牙医邮箱：" />
+      <Label layoutX="543.0" layoutY="232.0" prefHeight="54.0" prefWidth="130.0" text="个人简介：" />
+    </children>
+</AnchorPane>

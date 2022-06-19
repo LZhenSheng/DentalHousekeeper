@@ -1,0 +1,191 @@
+<resources>
+
+<!--    <style name="AppTheme" parent="XUITheme.Phone">-->
+<!--        &lt;!&ndash; 自定义自己的主题样式 &ndash;&gt;-->
+<!--        <item name="colorPrimary">@color/colorPrimary</item>-->
+<!--        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+<!--        <item name="colorAccent">@color/colorAccent</item>-->
+
+<!--    </style>-->
+
+    <!--用于占空间-->
+    <style name="MyView">
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <!--登录，注册界面输入框样式-->
+    <style name="LREditText" parent="Theme.AppCompat.Light">
+        <!--图标到内容的间距-->
+        <item name="android:drawablePadding">@dimen/padding_meddle</item>
+        <item name="android:paddingTop">@dimen/padding_meddle</item>
+        <item name="android:paddingBottom">@dimen/padding_meddle</item>
+        <!--最大显示一行-->
+        <item name="android:lines">1</item>
+        <item name="colorControlActivated">@color/main_color</item>
+        <item name="colorControlNormal">@color/main_color</item>
+        <item name="android:layout_marginTop">@dimen/padding_meddle</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <!--        <item name="android:background">@drawable/selector_edit_text</item>-->
+    </style>
+
+    <!--登录、注册按钮样式-->
+    <style name="LRButton" parent="@style/Widget.AppCompat.Button.Borderless">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/button_height</item>
+        <item name="android:layout_marginTop">@dimen/margin_meddle</item>
+    </style>
+
+<!--    &lt;!&ndash; Base application theme. &ndash;&gt;-->
+<!--    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">-->
+<!--        &lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+<!--        <item name="colorPrimary">@color/colorPrimary</item>-->
+<!--        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+<!--        <item name="colorAccent">@color/colorAccent</item>-->
+<!--    </style>-->
+    <!-- 自定义控件风格-->
+    <style name="Custom" />
+
+    <!--下划线-->
+    <style name="UnderLine">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">2dp</item>
+        <item name="android:background">#efefef</item>
+    </style>
+    <style name="UnderLineBlack">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:background">@color/simple_gray</item>
+    </style>
+
+    <!--AppBarLayout样式-->
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <!--toolbar样式-->
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!--登录，注册界面输入框样式-->
+    <style name="EditText" parent="Theme.AppCompat.Light">
+        <!--图标到内容的间距-->
+        <item name="android:drawablePadding">@dimen/padding_meddle</item>
+        <item name="android:paddingTop">@dimen/padding_meddle</item>
+        <item name="android:paddingBottom">@dimen/padding_meddle</item>
+        <!--最大显示一行-->
+        <item name="android:lines">1</item>
+        <item name="colorControlActivated">@color/main_color</item>
+        <item name="colorControlNormal">@color/main_color</item>
+        <item name="android:layout_marginTop">@dimen/padding_meddle</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <!--        <item name="android:background">@drawable/selector_edit_text</item>-->
+    </style>
+
+    <!--登录，注册界面输入框样式-->
+    <style name="EditText2" parent="Theme.AppCompat.Light">
+        <!--图标到内容的间距-->
+        <item name="android:drawablePadding">@dimen/padding_meddle</item>
+        <item name="android:paddingTop">@dimen/padding_meddle</item>
+        <item name="android:paddingBottom">@dimen/padding_meddle</item>
+        <!--最大显示一行-->
+        <item name="android:lines">1</item>
+        <item name="android:layout_marginTop">@dimen/padding_meddle</item>
+        <item name="android:layout_weight">1</item>
+        <item name="colorControlNormal">@color/main_color</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="colorControlActivated">@color/main_color</item>
+        <!--        <item name="android:background">@drawable/selector_edit_text</item>-->
+    </style>
+
+    <!--登录、注册按钮样式-->
+    <style name="Button" parent="@style/Widget.AppCompat.Button.Borderless">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/button_height</item>
+        <item name="android:layout_marginTop">@dimen/margin_meddle</item>
+    </style>
+    <!--Fundraising按钮格式-->
+    <style name="SButton">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_marginTop">@dimen/margin_meddle</item>
+    </style>
+
+    <!--Login线性布局-->
+    <style name="LoginLayout">
+        <item name="android:paddingRight">@dimen/margin_large</item>
+        <item name="android:paddingLeft">@dimen/margin_large</item>
+        <item name="android:paddingBottom">@dimen/margin_large</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+
+    </style>
+
+    <!--ToolBar下的线性布局-->
+    <style name="ToolbarContent">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="layout_behavior">@string/appbar_scrolling_view_behavior</item>
+    </style>
+
+    <!--笑脸-->
+    <style name="Icon">
+        <item name="android:layout_height">@dimen/icon_height</item>
+        <item name="android:layout_width">@dimen/icon_width</item>
+    </style>
+
+    <style name="Base.ThemeOverlay.AppCompat.Dark1" parent="Platform.ThemeOverlay.AppCompat.Dark">
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:colorForeground">@color/white</item>
+        <item name="android:colorForegroundInverse">@color/white</item>
+        <item name="android:colorBackground">@color/white</item>
+        <item name="android:colorBackgroundCacheHint">@color/white</item>
+        <item name="colorBackgroundFloating">@color/white</item>
+
+        <item name="android:textColorPrimary">@color/abc_primary_text_material_dark</item>
+        <item name="android:textColorPrimaryInverse">@color/abc_primary_text_material_light</item>
+        <item name="android:textColorPrimaryDisableOnly">@color/abc_primary_text_disable_only_material_dark</item>
+        <item name="android:textColorSecondary">@color/abc_secondary_text_material_dark</item>
+        <item name="android:textColorSecondaryInverse">@color/abc_secondary_text_material_light</item>
+        <item name="android:textColorTertiary">@color/abc_secondary_text_material_dark</item>
+        <item name="android:textColorTertiaryInverse">@color/abc_secondary_text_material_light</item>
+        <item name="android:textColorHint">@color/abc_hint_foreground_material_dark</item>
+        <item name="android:textColorHintInverse">@color/abc_hint_foreground_material_light</item>
+        <item name="android:textColorHighlight">@color/highlighted_text_material_dark</item>
+
+        <item name="colorControlNormal">@color/white</item>
+        <item name="colorControlHighlight">@color/white</item>
+        <item name="colorButtonNormal">@color/white</item>
+        <item name="colorSwitchThumbNormal">@color/white</item>
+
+        <!-- Used by MediaRouter -->
+        <item name="isLightTheme">false</item>
+    </style>
+    <!--动画-->
+    <style name="BottomDialogStyle" parent_id="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 浮于Activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- Dialog以外的区域模糊效果 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- Dialog进入及退出动画 -->
+        <item name="android:windowAnimationStyle">@style/BottomDialogAnimation</item>
+    </style>
+    <!-- ActionSheet进出动画 -->
+    <style name="BottomDialogAnimation" parent_id="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/bottom_dialog_in</item>
+        <item name="android:windowExitAnimation">@anim/bottom_dialog_exit</item>
+    </style>
+</resources>

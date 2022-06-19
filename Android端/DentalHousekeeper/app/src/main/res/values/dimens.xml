@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Activity边距-->
+    <dimen name="activity_margin">16dp</dimen>
+
+    <!--间歇-->
+    <dimen name="padding_small">5dp</dimen>
+    <dimen name="padding_meddle">10dp</dimen>
+    <dimen name="padding_large">20dp</dimen>
+    <dimen name="padding_max">36dp</dimen>
+
+    <!--边框-->
+    <dimen name="margin_small">5dp</dimen>
+    <dimen name="margin_meddle">10dp</dimen>
+    <dimen name="margin_large">20dp</dimen>
+    <dimen name="avatar_width_meddle">40dp</dimen>
+
+    <!--分割线相关-->
+    <dimen name="divider_small">1dp</dimen>
+    <dimen name="divider_meddle">10dp</dimen>
+    <dimen name="divider_comment_reply">2dp</dimen>
+
+
+    <!--radius-->
+    <dimen name="radius">10dp</dimen>
+    <dimen name="icon_width">40dp</dimen>
+    <dimen name="icon_height">40dp</dimen>
+
+    <!--默认字体大小-->
+    <dimen name="default_text_size">15sp</dimen>
+
+    <!-- 默认分割线大小 -->
+    <dimen name="line_size">1px</dimen>
+    <dimen name="guide_indicator_height">40dp</dimen>
+    <dimen name="meddle_padding">10dp</dimen>
+    <dimen name="banner_height">200dp</dimen>
+    <dimen name="publish_message_edit_text_height">150dp</dimen>
+    <dimen name="radius_small">5dp</dimen>
+    <item name="line_space" type="dimen" format="float">1.3</item>
+
+    <!--用户相关-->
+    <dimen name="avatar_width_small">25dp</dimen>
+    <dimen name="avatar_width_meddle2">50dp</dimen>
+    <dimen name="avatar_width">80dp</dimen>
+
+    <dimen name="tab_layout_height">45dp</dimen>
+
+    <!--话题-->
+    <dimen name="topic_height">50dp</dimen>
+
+    <!--好友-->
+    <dimen name="index_title_width">80dp</dimen>
+
+    <!--我的资料-->
+    <dimen name="profile_avatar_height">70dp</dimen>
+    <dimen name="avatar_width_meddle3">60dp</dimen>
+    <dimen name="profile_item_height">50dp</dimen>
+
+    <!--小文本-->
+    <dimen name="text_small">12sp</dimen>
+    <dimen name="text_meddle">14sp</dimen>
+    <dimen name="text_large">18sp</dimen>
+
+    <!--按钮相关-->
+    <dimen name="button_width_small">80dp</dimen>
+    <dimen name="button_width_large">130dp</dimen>
+    <dimen name="button_height_small">30dp</dimen>
+    <dimen name="button_height">40dp</dimen>
+    <dimen name="button_height_large">50dp</dimen>
+    <dimen name="button_width">100dp</dimen>
+    <dimen name="radius_button">20dp</dimen>
+    <dimen name="tablayout_textsize">20sp</dimen>
+    <dimen name="title_height_small">30dp</dimen>
+    <dimen name="radius_button_small">15dp</dimen>
+
+    <!--聊天-->
+    <dimen name="item_chat_image_width">200dp</dimen>
+    <dimen name="icon_height_small">16dp</dimen>
+    <dimen name="padding_message">80dp</dimen>
+
+</resources>

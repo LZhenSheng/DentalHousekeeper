@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd"  >
+<!--指定要实现UserMapper-->
+<mapper namespace="com.example.demo.mapper.HospitalMapper">
+
+    <insert id="create" parameterType="com.example.demo.domin.Hospital" useGeneratedKeys="true"
+            keyColumn="id">
+        <!--生成uuid主键-->
+        <selectKey keyProperty="id" resultType="java.lang.String" order="BEFORE">
+            select replace(uuid(),'-','') AS id
+        </selectKey>
+
+        insert into `hospital`
+        (id,code,phone)
+        values(#{id},#{code},#{phone} )
+    </insert>
+
+    <!--更新验证码相关字段-->
+    <update id="updateHospital">
+        update `hospital`
+        <set>
+            name = #{name},
+            province = #{province},
+            city=#{city},
+            area=#{area},
+            password=#{password}
+        </set>
+        where phone = #{phone} and code=#{code}
+    </update>
+
+    <!--查询所有对象-->
+    <select id="loginHospital" resultType="com.example.demo.domin.Hospital">
+        select * from `hospital` where phone = #{phone} and password=#{password}
+    </select>
+
+    <insert id="addDoctor" parameterType="com.example.demo.domin.Doctor" useGeneratedKeys="true"
+            keyColumn="id">
+        <!--生成uuid主键-->
+        <selectKey keyProperty="id" resultType="java.lang.String" order="BEFORE">
+            select replace(uuid(),'-','') AS id
+        </selectKey>
+        insert into `doctor`
+        (id, name, phone,password,hospital,type,room,email, description,avatar,gender)
+        values(#{id}, #{name},#{phone},#{password},#{hospital},
+        #{type},#{room},#{email} ,#{description},#{avatar},#{gender})
+    </insert>
+
+    <!--查询所有对象-->
+    <select id="findDoctorsByHospitalId" parameterType="com.example.demo.domin.Hospital" resultType="com.example.demo.domin.Doctor">
+        select * from `doctor` where hospital=#{id}
+    </select>
+    <!--查询所有对象-->
+    <select id="findDoctorByDoctorId" resultType="com.example.demo.domin.Doctor">
+        select * from `doctor` where id=#{id}
+    </select>
+
+    <!--查询所有对象-->
+    <select id="findDepartmentByDepartmentId" resultType="com.example.demo.domin.Department">
+        select * from `department` where id=#{id}
+    </select>
+
+    <!--更新验证码相关字段-->
+    <update id="updateDoctorMessage" parameterType="com.example.demo.domin.Doctor">
+        update `doctor`
+        <set>
+            name = #{name},
+            password=#{password},
+            type = #{type},
+            room=#{room},
+            email=#{email},
+            description=#{description}
+        </set>
+        where id = #{id}
+    </update>
+
+    <!--更新验证码相关字段-->
+    <update id="updateDepartmentByDepartmentId" parameterType="com.example.demo.domin.Department">
+        update `department`
+        <set>
+            name = #{name},
+            profile=#{profile}
+        </set>
+        where id = #{id}
+    </update>
+
+    <!--更新验证码相关字段-->
+    <delete id="deleteDoctorMessage" parameterType="com.example.demo.domin.Doctor">
+        delete from `doctor` where id=#{id}
+    </delete>
+
+    <insert id="createPreOrderByHospital" parameterType="com.example.demo.domin.PreOrder"  useGeneratedKeys="true"
+            keyColumn="id">
+
+        <!--生成uuid主键-->
+        <selectKey keyProperty="id" resultType="java.lang.String" order="BEFORE">
+            select replace(uuid(),'-','') AS id
+        </selectKey>
+
+        insert into `preorder`
+        (id, doctor_id, date,
+        start_time, end_time,number,
+        money,rest,style,hospital)
+        values(#{id}, #{doctorId},#{date},
+        #{startTime},#{endTime},#{number},
+        #{money},#{number},#{style},#{hospital})
+    </insert>
+
+    <!--查询所有对象-->
+    <select id="getPreOrderByDoctorId" parameterType="com.example.demo.domin.Doctor" resultType="com.example.demo.domin.PreOrder">
+        select * from `preorder` where doctor_id=#{id}
+    </select>
+
+    <!--更新验证码相关字段-->
+    <delete id="deletePreOrderByPreOrderId" parameterType="com.example.demo.domin.PreOrder">
+        delete from `preorder` where id=#{id}
+    </delete>
+
+    <!--更新验证码相关字段-->
+    <delete id="deleteDepartmentByDepartmentId" parameterType="com.example.demo.domin.Department">
+        delete from `department` where id=#{id}
+    </delete>
+
+    <!--查询所有对象-->
+    <select id="findAllHospital" resultType="com.example.demo.domin.Hospital">
+        select * from `hospital`
+    </select>
+
+    <!--查询所有对象-->
+    <select id="findHospitalByHospitalId" resultType="com.example.demo.domin.Hospital" parameterType="com.example.demo.domin.Hospital">
+        select * from `hospital` where id=#{id}
+    </select>
+
+    <!--查询所有对象-->
+    <select id="loginDoctor" resultType="com.example.demo.domin.Doctor">
+        select * from `doctor` where phone = #{phone} and password=#{password}
+    </select>
+
+    <!--查询所有对象-->
+    <select id="findAppointMentByDoctorId" resultType="com.example.demo.domin.AppointMent">
+        select * from `appointment` where doctor_id = #{id} and status=1
+    </select>
+
+    <!--查询所有对象-->
+    <select id="findPatientsByPatientId" resultType="com.example.demo.domin.Patient">
+        select * from `patient` where id = #{data}
+    </select>
+
+    <insert id="createDICOMImage" parameterType="com.example.demo.domin.DICOMImage"  useGeneratedKeys="true"
+            keyColumn="id">
+        <!--生成uuid主键-->
+        <selectKey keyProperty="id" resultType="java.lang.String" order="BEFORE">
+            select replace(uuid(),'-','') AS id
+        </selectKey>
+        insert into `dicomimage`
+        (id, patient_id, uri,jpg,doctor_id)
+        values(#{id}, #{patientId},#{uri},#{jpg},#{doctorId})
+    </insert>
+
+    <!--查询所有对象-->
+    <select id="findDicomByPatientId" resultType="com.example.demo.domin.DICOMImage">
+        select * from `dicomimage` where patient_id = #{patientId} order by created_at desc
+    </select>
+
+    <!--查询所有对象-->
+    <select id="findDicomByDicomId" resultType="com.example.demo.domin.DICOMImage">
+        select * from `dicomimage` where id = #{id}
+    </select>
+
+    <insert id="createERecord" parameterType="com.example.demo.domin.EReocrd"  useGeneratedKeys="true"
+            keyColumn="id">
+        <!--生成uuid主键-->
+        <selectKey keyProperty="id" resultType="java.lang.String" order="BEFORE">
+            select replace(uuid(),'-','') AS id
+        </selectKey>
+        insert into `erecord`
+        (id, doctor, cheif_complaint,present_past_history,past_history,inspect,supplementary_examination,diagnosis,treatment_plan,medical_care,medical_advice,patient_id)
+        values(#{id}, #{doctor},#{cheifComplaint},#{presentPastHistory},#{pastHistory},#{inspect},#{supplementaryExamination},#{diagnosis},#{treatmentPlan},#{medicalCare},#{medicalAdvice},#{patientId})
+    </insert>
+
+    <!--更新验证码相关字段-->
+    <update id="updateAppointMentStatus">
+        update `appointment`
+        <set>
+            status=2
+        </set>
+        where id = #{data}
+    </update>
+
+    <!--查询所有对象-->
+    <select id="findERecordByPatientId" resultType="com.example.demo.domin.EReocrd">
+        select * from `erecord` where patient_id = #{id} order by created_at desc
+    </select>
+
+    <!--查询所有对象-->
+    <select id="findERecordById" resultType="com.example.demo.domin.EReocrd">
+        select * from `erecord` where id = #{id}
+    </select>
+
+    <!--查询所有对象-->
+    <select id="findERecordByDoctorId" resultType="com.example.demo.domin.EReocrd">
+        select * from `erecord` where doctor = #{id} order by created_at desc
+    </select>
+
+    <!--查询所有对象-->
+    <select id="findDicomsByDoctorId" resultType="com.example.demo.domin.DICOMImage">
+        select * from `dicomimage` where doctor_id = #{id} order by created_at desc
+    </select>
+
+    <!--查询所有对象-->
+    <select id="findSchedulingsByHospitalId" parameterType="com.example.demo.domin.Hospital" resultType="com.example.demo.domin.PreOrder">
+        select * from `preorder` where hospital=#{id} order by created_at desc
+    </select>
+
+    <!--查询所有对象-->
+    <select id="finddoctorIdByName" resultType="java.lang.String">
+        select id from `doctor` where name = #{data}
+    </select>
+
+    <insert id="addDepartment" parameterType="com.example.demo.domin.Department" useGeneratedKeys="true"
+            keyColumn="id">
+        <!--生成uuid主键-->
+        <selectKey keyProperty="id" resultType="java.lang.String" order="BEFORE">
+            select replace(uuid(),'-','') AS id
+        </selectKey>
+        insert into `department`
+        (id, name, profile,hospital)
+        values(#{id}, #{name},#{profile},#{hospital})
+    </insert>
+
+    <!--查询所有对象-->
+    <select id="findDepartmentsByHospitalId" parameterType="com.example.demo.domin.Hospital" resultType="com.example.demo.domin.Department">
+        select * from `department` where hospital=#{id} order by created_at desc
+    </select>
+
+    <!--查询所有对象-->
+    <select id="findPaymentsByHospitalId" parameterType="com.example.demo.domin.Hospital" resultType="com.example.demo.domin.Payment">
+        select * from `payment` where hospital=#{id} order by created_at desc
+    </select>
+
+    <!--更新验证码相关字段-->
+    <update id="updateHospitalMessage" parameterType="com.example.demo.domin.Hospital">
+        update `hospital`
+        <set>
+            name = #{name},
+            province=#{province},
+            city = #{city},
+            area=#{area},
+            avatar=#{avatar}
+        </set>
+        where id = #{id}
+    </update>
+</mapper>

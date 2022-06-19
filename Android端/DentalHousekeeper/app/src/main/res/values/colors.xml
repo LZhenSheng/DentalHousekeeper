@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+
+    <color name="shadow_color">#81B5FC</color>
+    <!--        <color name="main_color">#1677FF</color>-->
+
+    <!--    <color name="main_color">#B0D1FF</color>-->
+    <color name="new_color">#1877FF</color>
+    <color name="red">#FF0000</color>
+    <color name="main_color">#1877FF</color>
+    <color name="main_background">#E3EDFC</color>
+    <!--    <color name="blue">#71C695</color>-->
+
+    <color name="gray">#D8D2D2</color>
+    <color name="simple_gray">#bac0c7</color>
+    <color name="transparent">#00000000</color>
+    <color name="little_gray">#dcdcdc</color>
+    <!--亮一点的灰色-->
+    <color name="light_grey">#aaaaaa</color>
+    <color name="text">#333</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000</color>
+    <!--分割线颜色-->
+    <color name="divider_color">#e7e9e9</color>
+    <!--全局背景-->
+    <color name="background">@color/white</color>
+    <color name="main_bg">#F6F5F5</color>
+    <color name="text_highlight">#3385ff</color>
+    <!--首页按钮未选中颜色
+    argb
+    a：透明度；ff:完全不透明-->
+    <color name="tab_normal">#aaffffff</color>
+
+    <!--索引提示-->
+    <color name="transparent_88_black">#88000000</color>
+
+    <!--    导航栏相关-->
+    <color name="location_login">#B0D1FF</color>
+
+    <color name="gray1">#F1F1F1</color>
+    <color name="gray2">#9E9FA3</color>
+</resources>

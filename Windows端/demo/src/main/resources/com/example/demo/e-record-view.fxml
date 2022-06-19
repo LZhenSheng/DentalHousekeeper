@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane   style="-fx-background-color: #FFFFFF;" minHeight="0.0" minWidth="0.0" prefHeight="547.0" prefWidth="970.0" styleClass="panel" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.ERecordController">
+   <children>
+      <Label layoutX="23.0" layoutY="46.0" prefHeight="42.0" prefWidth="121.0" text="检查患者：" />
+      <Label layoutX="23.0" layoutY="85.0" prefHeight="42.0" prefWidth="121.0" text="主      诉：" />
+      <Label layoutX="23.0" layoutY="123.0" prefHeight="42.0" prefWidth="121.0" text="现 病 史：" />
+      <Label layoutX="23.0" layoutY="164.0" prefHeight="42.0" prefWidth="121.0" text="既 往 史：" />
+      <Label layoutX="23.0" layoutY="209.0" prefHeight="42.0" prefWidth="121.0" text="检      查：" />
+      <Label layoutX="23.0" layoutY="250.0" prefHeight="42.0" prefWidth="121.0" text="辅助检查:" />
+      <Label layoutX="23.0" layoutY="289.0" prefHeight="42.0" prefWidth="121.0" text="诊       断:" />
+      <Label layoutX="23.0" layoutY="333.0" prefHeight="42.0" prefWidth="121.0" text="治疗方案:" />
+      <Label layoutX="23.0" layoutY="373.0" prefHeight="42.0" prefWidth="121.0" text="治       疗:" />
+      <Label layoutX="23.0" layoutY="413.0" prefHeight="42.0" prefWidth="121.0" text="医       嘱:" />
+      <TextField fx:id="cheifComplaint" layoutX="106.0" layoutY="90.0" prefHeight="36.0" prefWidth="851.0" style="-fx-background-radius: 5;"/>
+      <TextField fx:id="presentPastHistory" layoutX="106.0" layoutY="131.0" prefHeight="36.0" prefWidth="851.0" style="-fx-background-radius: 5;"/>
+      <TextField fx:id="pastHistory" layoutX="106.0" layoutY="171.0" prefHeight="36.0" prefWidth="851.0" style="-fx-background-radius: 5;"/>
+      <TextField fx:id="inspect" layoutX="106.0" layoutY="212.0" prefHeight="36.0" prefWidth="851.0" style="-fx-background-radius: 5;"/>
+      <TextField fx:id="supplementaryExamination" layoutX="107.0" layoutY="254.0" prefHeight="36.0" prefWidth="851.0" style="-fx-background-radius: 5;"/>
+      <TextField fx:id="diagnosis" layoutX="106.0" layoutY="295.0" prefHeight="36.0" prefWidth="851.0" style="-fx-background-radius: 5;"/>
+      <TextField fx:id="treatmentPlan" layoutX="106.0" layoutY="338.0" prefHeight="36.0" prefWidth="851.0" style="-fx-background-radius: 5;"/>
+      <TextField fx:id="medicalCare" layoutX="106.0" layoutY="378.0" prefHeight="36.0" prefWidth="851.0" style="-fx-background-radius: 5;"/>
+      <TextField fx:id="medicalAdvice" layoutX="106.0" layoutY="420.0" prefHeight="36.0" prefWidth="851.0" style="-fx-background-radius: 5;"/>
+      <TextField fx:id="createAt" layoutX="106.0" layoutY="463.0" prefHeight="36.0" prefWidth="851.0" style="-fx-background-radius: 5;"/>
+      <Label layoutX="23.0" layoutY="456.0" prefHeight="42.0" prefWidth="121.0" text="创建时间:" />
+      <TextField fx:id="name" layoutX="106.0" layoutY="49.0" prefHeight="36.0" prefWidth="851.0" style="-fx-background-radius: 5;"  />
+   </children>
+</AnchorPane>

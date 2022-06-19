@@ -1,0 +1,51 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.tencent.liteav.tuiroom" >
+4
+5    <uses-sdk
+6        android:minSdkVersion="17"
+6-->E:\androidproject\DentalHousekeeper\tuiroom\src\main\AndroidManifest.xml
+7        android:targetSdkVersion="26" />
+7-->E:\androidproject\DentalHousekeeper\tuiroom\src\main\AndroidManifest.xml
+8
+9    <application>
+9-->E:\androidproject\DentalHousekeeper\tuiroom\src\main\AndroidManifest.xml:5:5-29:19
+10        <activity
+10-->E:\androidproject\DentalHousekeeper\tuiroom\src\main\AndroidManifest.xml:6:9-10:66
+11            android:name="com.tencent.liteav.tuiroom.ui.TUIRoomActivity"
+11-->E:\androidproject\DentalHousekeeper\tuiroom\src\main\AndroidManifest.xml:7:13-73
+12            android:launchMode="singleTask"
+12-->E:\androidproject\DentalHousekeeper\tuiroom\src\main\AndroidManifest.xml:8:13-44
+13            android:screenOrientation="portrait"
+13-->E:\androidproject\DentalHousekeeper\tuiroom\src\main\AndroidManifest.xml:9:13-49
+14            android:theme="@style/Theme.AppCompat.NoActionBar" />
+14-->E:\androidproject\DentalHousekeeper\tuiroom\src\main\AndroidManifest.xml:10:13-63
+15        <activity
+15-->E:\androidproject\DentalHousekeeper\tuiroom\src\main\AndroidManifest.xml:12:9-15:66
+16            android:name="com.tencent.liteav.tuiroom.ui.CreateRoomActivity"
+16-->E:\androidproject\DentalHousekeeper\tuiroom\src\main\AndroidManifest.xml:13:13-76
+17            android:screenOrientation="portrait"
+17-->E:\androidproject\DentalHousekeeper\tuiroom\src\main\AndroidManifest.xml:14:13-49
+18            android:theme="@style/Theme.AppCompat.NoActionBar" />
+18-->E:\androidproject\DentalHousekeeper\tuiroom\src\main\AndroidManifest.xml:15:13-63
+19        <activity
+19-->E:\androidproject\DentalHousekeeper\tuiroom\src\main\AndroidManifest.xml:17:9-20:66
+20            android:name="com.tencent.liteav.tuiroom.ui.JoinRoomActivity"
+20-->E:\androidproject\DentalHousekeeper\tuiroom\src\main\AndroidManifest.xml:18:13-74
+21            android:screenOrientation="portrait"
+21-->E:\androidproject\DentalHousekeeper\tuiroom\src\main\AndroidManifest.xml:19:13-49
+22            android:theme="@style/Theme.AppCompat.NoActionBar" />
+22-->E:\androidproject\DentalHousekeeper\tuiroom\src\main\AndroidManifest.xml:20:13-63
+23        <activity
+23-->E:\androidproject\DentalHousekeeper\tuiroom\src\main\AndroidManifest.xml:22:9-26:66
+24            android:name="com.tencent.liteav.tuiroom.ui.RoomMainActivity"
+24-->E:\androidproject\DentalHousekeeper\tuiroom\src\main\AndroidManifest.xml:23:13-74
+25            android:launchMode="singleTask"
+25-->E:\androidproject\DentalHousekeeper\tuiroom\src\main\AndroidManifest.xml:24:13-44
+26            android:screenOrientation="portrait"
+26-->E:\androidproject\DentalHousekeeper\tuiroom\src\main\AndroidManifest.xml:25:13-49
+27            android:theme="@style/Theme.AppCompat.NoActionBar" />
+27-->E:\androidproject\DentalHousekeeper\tuiroom\src\main\AndroidManifest.xml:26:13-63
+28    </application>
+29
+30</manifest>

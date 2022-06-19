@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/main_color">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/picture_back">
+
+        <TextView
+            android:id="@+id/main_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:singleLine="true"
+            android:text="牙医信息"
+            android:textColor="@color/white"
+            android:textSize="18sp"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <!--内容部分layout_behavior:用来控制内容区域-->
+    <LinearLayout
+        android:background="@color/white"
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@color/main_color"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <com.zyp.cardview.YcCardView
+                        app:ycCardElevation="5dp"
+                        android:layout_marginTop="35dp"
+                        app:ycCardCornerRadius="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_marginTop="30dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical"
+                            app:layout_scrollFlags="scroll">
+
+                            <!--昵称-->
+                            <TextView
+                                android:id="@+id/tv_nickname"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/padding_large"
+                                android:text="昵称"
+                                android:textColor="@color/text"
+                                android:textSize="@dimen/text_large" />
+
+                            <!--信息-->
+                            <TextView
+                                android:id="@+id/type"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/text" />
+
+                            <!--信息-->
+                            <TextView
+                                android:id="@+id/room"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/text" />
+
+                            <!--信息-->
+                            <TextView
+                                android:id="@+id/address"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/text" />
+
+                            <!--信息-->
+                            <TextView
+                                android:id="@+id/descripition"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/text" />
+                        </LinearLayout>
+                    </com.zyp.cardview.YcCardView>
+                </LinearLayout>
+                <!--头像-->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <View
+                        style="@style/MyView"/>
+                    <androidx.cardview.widget.CardView
+                        app:cardPreventCornerOverlap="false"
+                        app:cardUseCompatPadding="false"
+                        app:cardElevation="0dp"
+                        app:cardCornerRadius="40dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            app:civ_border_color="@android:color/white"
+                            android:id="@+id/iv_avatar"
+                            android:layout_width="@dimen/avatar_width"
+                            android:layout_height="@dimen/avatar_width"
+                            android:src="@mipmap/doctor" />
+                    </androidx.cardview.widget.CardView>
+                    <View
+                        style="@style/MyView"/>
+                </LinearLayout>
+            </RelativeLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

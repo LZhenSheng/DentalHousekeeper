@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<JFXTabPane fx:id="jFXTabPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="647.0" prefWidth="970.0" style="-fx-background-color: #e6e6e6;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.MainHospitalController">
+   <tabs>
+      <Tab text="医生管理">
+         <content>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="panel">
+               <children>
+                  <TableView fx:id="tableView" layoutY="59.0" prefHeight="514.0" prefWidth="970.0">
+                     <styleClass>
+                        <String fx:value="panel" />
+                     </styleClass>
+                  </TableView>
+                  <JFXButton layoutX="280.0" layoutY="14.0" onAction="#update" text="刷新">
+                     <styleClass>
+                        <String fx:value="btn" />
+                        <String fx:value="btn-info" />
+                     </styleClass>
+                  </JFXButton>
+                  <JFXButton layoutX="380.0" layoutY="14.0" onAction="#add" text="添加">
+                     <styleClass>
+                        <String fx:value="btn" />
+                        <String fx:value="btn-info" />
+                     </styleClass>
+                  </JFXButton>
+                  <JFXButton layoutX="480.0" layoutY="14.0" onAction="#exit" text="退出">
+                     <styleClass>
+                        <String fx:value="btn" />
+                        <String fx:value="btn-danger" />
+                     </styleClass>
+                  </JFXButton>
+                  <TextField fx:id="manageDoctor" layoutX="14.0" layoutY="14.0" prefHeight="30.0" prefWidth="161.0" style="-fx-alignment: center; -fx-background-radius: 5;" />
+                  <JFXButton layoutX="187.0" layoutY="14.0" onAction="#manageDoctor" text="搜索">
+                     <styleClass>
+                        <String fx:value="btn" />
+                        <String fx:value="btn-info" />
+                     </styleClass>
+                  </JFXButton>
+               </children>
+               <styleClass>
+                  <String fx:value="panel" />
+               </styleClass>
+            </AnchorPane>
+         </content>
+      </Tab>
+      <Tab text="排班管理">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="panel">
+               <children>
+                  <TableView fx:id="tableView1" layoutY="55.0" prefHeight="514.0" prefWidth="970.0">
+                     <styleClass>
+                        <String fx:value="panel" />
+                     </styleClass>
+                  </TableView>
+                  <JFXButton layoutX="281.0" layoutY="14.0" onAction="#updateScheduling" text="刷新">
+                     <styleClass>
+                        <String fx:value="btn" />
+                        <String fx:value="btn-info" />
+                     </styleClass>
+                  </JFXButton>
+                  <JFXButton layoutX="381.0" layoutY="14.0" onAction="#addScheduling" text="添加">
+                     <styleClass>
+                        <String fx:value="btn" />
+                        <String fx:value="btn-info" />
+                     </styleClass>
+                  </JFXButton>
+                  <JFXButton layoutX="481.0" layoutY="14.0" onAction="#exit" text="退出">
+                     <styleClass>
+                        <String fx:value="btn" />
+                        <String fx:value="btn-danger" />
+                     </styleClass>
+                  </JFXButton>
+                  <JFXButton layoutX="189.0" layoutY="14.0" onAction="#manageScheduling" text="搜索">
+                     <styleClass>
+                        <String fx:value="btn" />
+                        <String fx:value="btn-info" />
+                     </styleClass>
+                  </JFXButton>
+                  <TextField fx:id="manageScheduling" layoutX="14.0" layoutY="14.0" prefHeight="30.0" prefWidth="161.0" style="-fx-alignment: center; -fx-background-radius: 5;" />
+               </children>
+               <styleClass>
+                  <String fx:value="panel" />
+               </styleClass>
+            </AnchorPane>
+         </content>
+      </Tab>
+      <Tab text="科室管理">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="panel">
+               <children>
+                  <TableView fx:id="tableView2" layoutY="54.0" prefHeight="514.0" prefWidth="970.0">
+                     <styleClass>
+                        <String fx:value="panel" />
+                     </styleClass>
+                  </TableView>
+                  <JFXButton layoutX="282.0" layoutY="12.0" onAction="#updateDepartment" text="刷新">
+                     <styleClass>
+                        <String fx:value="btn" />
+                        <String fx:value="btn-info" />
+                     </styleClass>
+                  </JFXButton>
+                  <JFXButton layoutX="382.0" layoutY="12.0" onAction="#addDepartment" text="添加">
+                     <styleClass>
+                        <String fx:value="btn" />
+                        <String fx:value="btn-info" />
+                     </styleClass>
+                  </JFXButton>
+                  <JFXButton layoutX="482.0" layoutY="12.0" onAction="#exit" text="退出">
+                     <styleClass>
+                        <String fx:value="btn" />
+                        <String fx:value="btn-danger" />
+                     </styleClass>
+                  </JFXButton>
+                  <TextField fx:id="manageDepartment" layoutX="14.0" layoutY="12.0" prefHeight="30.0" prefWidth="161.0" style="-fx-alignment: center; -fx-background-radius: 5;" />
+                  <JFXButton layoutX="192.0" layoutY="12.0" onAction="#manageDepartment" text="搜索">
+                     <styleClass>
+                        <String fx:value="btn" />
+                        <String fx:value="btn-info" />
+                     </styleClass>
+                  </JFXButton>
+               </children>
+               <styleClass>
+                  <String fx:value="panel" />
+               </styleClass>
+            </AnchorPane>
+         </content>
+      </Tab>
+      <Tab text="账单统计">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TableView fx:id="tableView3" layoutY="54.0" prefHeight="514.0" prefWidth="970.0" style="-fx-background-color: #FFF;">
+                     <styleClass>
+                        <String fx:value="panel" />
+                        <String fx:value="bg-primary" />
+                     </styleClass></TableView>
+                  <JFXButton layoutX="285.0" layoutY="12.0" onAction="#updatePayment" text="刷新">
+                     <styleClass>
+                        <String fx:value="btn" />
+                        <String fx:value="btn-info" />
+                     </styleClass>
+                  </JFXButton>
+                  <JFXButton layoutX="382.0" layoutY="12.0" onAction="#exit" text="退出">
+                     <styleClass>
+                        <String fx:value="btn" />
+                        <String fx:value="btn-danger" />
+                     </styleClass>
+                  </JFXButton>
+                  <JFXButton layoutX="195.0" layoutY="12.0" onAction="#managePayment" text="搜索">
+                     <styleClass>
+                        <String fx:value="btn" />
+                        <String fx:value="btn-info" />
+                     </styleClass>
+                  </JFXButton>
+                  <TextField fx:id="managePayment" layoutX="21.0" layoutY="12.0" prefHeight="30.0" prefWidth="161.0" style="-fx-alignment: center; -fx-background-radius: 5;" />
+               </children>
+               <styleClass>
+                  <String fx:value="panel" />
+               </styleClass>
+            </AnchorPane>
+         </content>
+      </Tab>
+      <Tab text="医院信息">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <ImageView fx:id="imageViwe" fitHeight="137.0" fitWidth="222.0" layoutX="411.0" layoutY="39.0" onMouseClicked="#updateImage" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@drawable/add.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="288.0" layoutY="192.0" prefHeight="50.0" prefWidth="146.0" text="医院名称：" />
+                  <TextField fx:id="name" layoutX="411.0" layoutY="201.0" prefHeight="36.0" prefWidth="239.0" style="-fx-alignment: center; -fx-background-radius: 5;" />
+                  <TextField fx:id="province" layoutX="411.0" layoutY="264.0" prefHeight="36.0" prefWidth="239.0" style="-fx-alignment: center; -fx-background-radius: 5;" />
+                  <Label layoutX="288.0" layoutY="254.0" prefHeight="50.0" prefWidth="146.0" text="医院所在省：" />
+                  <Label layoutX="288.0" layoutY="314.0" prefHeight="50.0" prefWidth="146.0" text="医院所在市：" />
+                  <TextField fx:id="city" layoutX="411.0" layoutY="324.0" prefHeight="36.0" prefWidth="239.0" style="-fx-alignment: center; -fx-background-radius: 5;" />
+                  <Label layoutX="288.0" layoutY="375.0" prefHeight="50.0" prefWidth="146.0" text="医院所在地区：" />
+                  <TextField fx:id="area" layoutX="411.0" layoutY="384.0" prefHeight="36.0" prefWidth="239.0" style="-fx-alignment: center; -fx-background-radius: 5;" />
+                  <Label layoutX="288.0" layoutY="63.0" prefHeight="50.0" prefWidth="146.0" text="医院照片：" />
+                  <JFXButton layoutX="369.0" layoutY="463.0" prefHeight="36.0" prefWidth="242.0" text="更新">
+                     <styleClass>
+                        <String fx:value="btn" />
+                        <String fx:value="btn-info" />
+                     </styleClass></JFXButton>
+               </children>
+               <styleClass>
+                  <String fx:value="panel" />
+               </styleClass>
+            </AnchorPane>
+         </content>
+      </Tab>
+   </tabs>
+</JFXTabPane>

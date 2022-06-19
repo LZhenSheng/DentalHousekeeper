@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/main_color">
+
+    <!--Toolbar-->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:layout_marginTop="28dp"
+        android:layout_marginRight="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/picture_back">
+
+        <TextView
+            android:id="@+id/main_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:singleLine="true"
+            android:text="就诊记录"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <!--内容部分layout_behavior:用来控制内容区域-->
+    <LinearLayout
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:background="@color/main_bg"
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.zyp.cardview.YcCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:ycCardCornerRadius="10dp"
+                    app:ycCardElevation="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp">
+
+                            <TextView
+                                android:textSize="@dimen/text_large"
+                                android:textColor="@color/text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="就诊日期:"/>
+                            <TextView
+                                android:textSize="@dimen/text_large"
+                                android:textColor="@color/text"
+                                android:id="@+id/date"
+                                android:maxLength="140"
+                                android:lineSpacingMultiplier="@dimen/line_space"
+                                android:gravity="right"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp">
+
+                            <TextView
+                                android:textSize="@dimen/text_large"
+                                android:textColor="@color/text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10dp"
+                                android:text="就诊医院:"/>
+
+                            <TextView
+                                android:textSize="@dimen/text_large"
+                                android:textColor="@color/text"
+                                android:maxLength="140"
+                                android:lineSpacingMultiplier="@dimen/line_space"
+                                android:gravity="right"                                    android:id="@+id/hospital"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp">
+
+                            <TextView
+                                android:textSize="@dimen/text_large"
+                                android:textColor="@color/text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10dp"
+                                android:text="就诊医师:"/>
+
+                            <TextView
+                                android:textSize="@dimen/text_large"
+                                android:textColor="@color/text"
+                                android:maxLength="140"
+                                android:lineSpacingMultiplier="@dimen/line_space"
+                                android:gravity="right"                                    android:id="@+id/doctor"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:focusableInTouchMode="false" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp">
+
+                            <TextView
+                                android:textSize="@dimen/text_large"
+                                android:textColor="@color/text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10dp"
+                                android:text="主诉:" />
+
+                            <TextView
+                                android:textSize="@dimen/text_large"
+                                android:textColor="@color/text"
+                                android:maxLength="140"
+                                android:lineSpacingMultiplier="@dimen/line_space"
+                                android:gravity="right"                                    android:id="@+id/chief_complaint"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:focusableInTouchMode="false" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp">
+
+                            <TextView
+                                android:textSize="@dimen/text_large"
+                                android:textColor="@color/text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10dp"
+                                android:text="现病史:" />
+
+                            <TextView
+                                android:textSize="@dimen/text_large"
+                                android:textColor="@color/text"
+                                android:maxLength="140"
+                                android:lineSpacingMultiplier="@dimen/line_space"
+                                android:gravity="right"                                    android:id="@+id/present_past_history"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:focusableInTouchMode="false"
+                                />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp">
+
+                            <TextView
+                                android:textSize="@dimen/text_large"
+                                android:textColor="@color/text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10dp"
+                                android:text="既往史:" />
+
+                            <TextView
+                                android:textSize="@dimen/text_large"
+                                android:textColor="@color/text"
+                                android:maxLength="140"
+                                android:lineSpacingMultiplier="@dimen/line_space"
+                                android:gravity="right"                                    android:id="@+id/past_history"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:focusableInTouchMode="false" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:textColor="@color/text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp">
+
+                            <TextView
+                                android:textSize="@dimen/text_large"
+                                android:textColor="@color/text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10dp"
+                                android:text="检查:" />
+
+                            <TextView
+                                android:textSize="@dimen/text_large"
+                                android:textColor="@color/text"
+                                android:maxLength="140"
+                                android:lineSpacingMultiplier="@dimen/line_space"
+                                android:gravity="right"                                    android:id="@+id/inspect"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:focusableInTouchMode="false" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp">
+
+                            <TextView
+                                android:textSize="@dimen/text_large"
+                                android:textColor="@color/text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10dp"
+                                android:text="辅助检查:"/>
+
+                            <TextView
+                                android:textSize="@dimen/text_large"
+                                android:textColor="@color/text"
+                                android:maxLength="140"
+                                android:lineSpacingMultiplier="@dimen/line_space"
+                                android:gravity="right"                                    android:id="@+id/supplementary_examination"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:focusableInTouchMode="false" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp">
+
+                            <TextView
+                                android:textSize="@dimen/text_large"
+                                android:textColor="@color/text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10dp"
+                                android:text="诊断:"/>
+
+                            <TextView
+                                android:textSize="@dimen/text_large"
+                                android:textColor="@color/text"
+                                android:maxLength="140"
+                                android:lineSpacingMultiplier="@dimen/line_space"
+                                android:gravity="right"                                    android:id="@+id/diagnosis"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:focusableInTouchMode="false" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp">
+
+                            <TextView
+                                android:textSize="@dimen/text_large"
+                                android:textColor="@color/text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10dp"
+                                android:text="治疗方案:"/>
+
+                            <TextView
+                                android:textSize="@dimen/text_large"
+                                android:textColor="@color/text"
+                                android:maxLength="140"
+                                android:lineSpacingMultiplier="@dimen/line_space"
+                                android:gravity="right"                                    android:id="@+id/treatment_plan"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:focusableInTouchMode="false" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp">
+
+                            <TextView
+                                android:textSize="@dimen/text_large"
+                                android:textColor="@color/text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10dp"
+                                android:text="治疗:"/>
+
+                            <TextView
+                                android:textSize="@dimen/text_large"
+                                android:textColor="@color/text"
+                                android:maxLength="140"
+                                android:lineSpacingMultiplier="@dimen/line_space"
+                                android:gravity="right"
+                                android:id="@+id/medical_care"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:focusableInTouchMode="false" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp">
+
+                            <TextView
+                                android:textSize="@dimen/text_large"
+                                android:textColor="@color/text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10dp"
+                                android:text="医嘱:"/>
+
+                            <TextView
+                                android:textSize="@dimen/text_large"
+                                android:textColor="@color/text"
+                                android:maxLength="140"
+                                android:lineSpacingMultiplier="@dimen/line_space"
+                                android:gravity="right"                                android:id="@+id/medical_advice"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:focusableInTouchMode="false" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </com.zyp.cardview.YcCardView>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

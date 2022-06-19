@@ -1,0 +1,61 @@
+-- Merging decision tree log ---
+manifest
+ADDED from E:\androidproject\DentalHousekeeper\tuibeauty\src\main\AndroidManifest.xml:2:1-22:12
+INJECTED from E:\androidproject\DentalHousekeeper\tuibeauty\src\main\AndroidManifest.xml:2:1-22:12
+INJECTED from E:\androidproject\DentalHousekeeper\tuibeauty\src\main\AndroidManifest.xml:2:1-22:12
+	package
+		ADDED from E:\androidproject\DentalHousekeeper\tuibeauty\src\main\AndroidManifest.xml:3:5-50
+		INJECTED from E:\androidproject\DentalHousekeeper\tuibeauty\src\main\AndroidManifest.xml
+		INJECTED from E:\androidproject\DentalHousekeeper\tuibeauty\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from E:\androidproject\DentalHousekeeper\tuibeauty\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.WAKE_LOCK
+ADDED from E:\androidproject\DentalHousekeeper\tuibeauty\src\main\AndroidManifest.xml:5:5-68
+	android:name
+		ADDED from E:\androidproject\DentalHousekeeper\tuibeauty\src\main\AndroidManifest.xml:5:22-65
+uses-permission#android.permission.INTERNET
+ADDED from E:\androidproject\DentalHousekeeper\tuibeauty\src\main\AndroidManifest.xml:6:5-67
+	android:name
+		ADDED from E:\androidproject\DentalHousekeeper\tuibeauty\src\main\AndroidManifest.xml:6:22-64
+uses-permission#android.permission.CAMERA
+ADDED from E:\androidproject\DentalHousekeeper\tuibeauty\src\main\AndroidManifest.xml:7:5-65
+	android:name
+		ADDED from E:\androidproject\DentalHousekeeper\tuibeauty\src\main\AndroidManifest.xml:7:22-62
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from E:\androidproject\DentalHousekeeper\tuibeauty\src\main\AndroidManifest.xml:8:5-79
+	android:name
+		ADDED from E:\androidproject\DentalHousekeeper\tuibeauty\src\main\AndroidManifest.xml:8:22-76
+uses-feature#android.hardware.camera
+ADDED from E:\androidproject\DentalHousekeeper\tuibeauty\src\main\AndroidManifest.xml:10:5-60
+	android:name
+		ADDED from E:\androidproject\DentalHousekeeper\tuibeauty\src\main\AndroidManifest.xml:10:19-57
+uses-feature#android.hardware.camera.autofocus
+ADDED from E:\androidproject\DentalHousekeeper\tuibeauty\src\main\AndroidManifest.xml:11:5-70
+	android:name
+		ADDED from E:\androidproject\DentalHousekeeper\tuibeauty\src\main\AndroidManifest.xml:11:19-67
+application
+ADDED from E:\androidproject\DentalHousekeeper\tuibeauty\src\main\AndroidManifest.xml:13:5-20:19
+provider#com.tencent.qcloud.tuikit.tuibeauty.core.TUIBeautyProvider
+ADDED from E:\androidproject\DentalHousekeeper\tuibeauty\src\main\AndroidManifest.xml:15:9-19:40
+	android:enabled
+		ADDED from E:\androidproject\DentalHousekeeper\tuibeauty\src\main\AndroidManifest.xml:18:13-35
+	android:authorities
+		ADDED from E:\androidproject\DentalHousekeeper\tuibeauty\src\main\AndroidManifest.xml:17:13-69
+	android:exported
+		ADDED from E:\androidproject\DentalHousekeeper\tuibeauty\src\main\AndroidManifest.xml:19:13-37
+	android:name
+		ADDED from E:\androidproject\DentalHousekeeper\tuibeauty\src\main\AndroidManifest.xml:16:13-51
+uses-sdk
+INJECTED from E:\androidproject\DentalHousekeeper\tuibeauty\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from E:\androidproject\DentalHousekeeper\tuibeauty\src\main\AndroidManifest.xml
+INJECTED from E:\androidproject\DentalHousekeeper\tuibeauty\src\main\AndroidManifest.xml
+INJECTED from E:\androidproject\DentalHousekeeper\tuibeauty\src\main\AndroidManifest.xml
+INJECTED from E:\androidproject\DentalHousekeeper\tuibeauty\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from E:\androidproject\DentalHousekeeper\tuibeauty\src\main\AndroidManifest.xml
+		ADDED from E:\androidproject\DentalHousekeeper\tuibeauty\src\main\AndroidManifest.xml
+		INJECTED from E:\androidproject\DentalHousekeeper\tuibeauty\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from E:\androidproject\DentalHousekeeper\tuibeauty\src\main\AndroidManifest.xml
+		ADDED from E:\androidproject\DentalHousekeeper\tuibeauty\src\main\AndroidManifest.xml
+		INJECTED from E:\androidproject\DentalHousekeeper\tuibeauty\src\main\AndroidManifest.xml

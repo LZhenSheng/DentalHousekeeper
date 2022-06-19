@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zyp.cardview.YcCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_vertical"
+    app:ycContentPadding="10dp"
+    app:ycCardCornerRadius="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    app:ycCardElevation="5dp">
+
+   <LinearLayout
+       android:gravity="center_vertical"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal">
+       <!--头像-->
+       <de.hdodenhof.circleimageview.CircleImageView
+           android:id="@+id/iv_avatar"
+           android:src="@mipmap/doctor"
+           android:layout_width="@dimen/avatar_width_meddle2"
+           android:layout_height="@dimen/avatar_width_meddle2" />
+
+       <!--内容容器-->
+       <LinearLayout
+           android:layout_marginLeft="@dimen/padding_meddle"
+           android:orientation="vertical"
+           android:layout_width="0dp"
+           android:layout_weight="1"
+           android:layout_height="wrap_content">
+           <!--昵称-->
+           <TextView
+               android:textSize="@dimen/text_large"
+               android:id="@+id/name"
+               android:textColor="@color/text"
+               android:text="客服"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+
+           <!--时间-->
+           <TextView
+               android:id="@+id/content"
+               android:textSize="@dimen/text_small"
+               android:text="12:28"
+               android:textColor="@color/text"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+       </LinearLayout>
+       <Button
+           android:paddingLeft="10dp"
+           android:paddingRight="10dp"
+           style="?android:attr/borderlessButtonStyle"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:background="@drawable/selector_color_primary"
+           android:foreground="?android:attr/selectableItemBackground"
+           android:text="回访"
+           android:textColor="@drawable/selector_text_color_primary_reverse"
+           android:id="@+id/returnback"/>
+   </LinearLayout>
+</com.zyp.cardview.YcCardView>

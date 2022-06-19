@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/padding_meddle"
+    android:gravity="right">
+
+    <!--封面容器-->
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/radius_small"
+        app:cardElevation="0dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:layout_marginRight="@dimen/padding_meddle">
+        <!--封面-->
+        <ImageView
+            android:id="@+id/iv_banner"
+            android:src="@drawable/placeholder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxHeight="@dimen/item_chat_image_width"
+            android:maxWidth="@dimen/item_chat_image_width" />
+    </androidx.cardview.widget.CardView>
+
+    <!--头像-->
+    <include layout="@layout/chat_message_avatar" />
+</LinearLayout>

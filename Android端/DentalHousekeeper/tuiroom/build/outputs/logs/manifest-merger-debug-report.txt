@@ -1,0 +1,63 @@
+-- Merging decision tree log ---
+manifest
+ADDED from E:\androidproject\DentalHousekeeper\tuiroom\src\main\AndroidManifest.xml:2:1-31:12
+INJECTED from E:\androidproject\DentalHousekeeper\tuiroom\src\main\AndroidManifest.xml:2:1-31:12
+INJECTED from E:\androidproject\DentalHousekeeper\tuiroom\src\main\AndroidManifest.xml:2:1-31:12
+	package
+		ADDED from E:\androidproject\DentalHousekeeper\tuiroom\src\main\AndroidManifest.xml:3:5-41
+		INJECTED from E:\androidproject\DentalHousekeeper\tuiroom\src\main\AndroidManifest.xml
+		INJECTED from E:\androidproject\DentalHousekeeper\tuiroom\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from E:\androidproject\DentalHousekeeper\tuiroom\src\main\AndroidManifest.xml:2:11-69
+application
+ADDED from E:\androidproject\DentalHousekeeper\tuiroom\src\main\AndroidManifest.xml:5:5-29:19
+activity#com.tencent.liteav.tuiroom.ui.TUIRoomActivity
+ADDED from E:\androidproject\DentalHousekeeper\tuiroom\src\main\AndroidManifest.xml:6:9-10:66
+	android:screenOrientation
+		ADDED from E:\androidproject\DentalHousekeeper\tuiroom\src\main\AndroidManifest.xml:9:13-49
+	android:launchMode
+		ADDED from E:\androidproject\DentalHousekeeper\tuiroom\src\main\AndroidManifest.xml:8:13-44
+	android:theme
+		ADDED from E:\androidproject\DentalHousekeeper\tuiroom\src\main\AndroidManifest.xml:10:13-63
+	android:name
+		ADDED from E:\androidproject\DentalHousekeeper\tuiroom\src\main\AndroidManifest.xml:7:13-73
+activity#com.tencent.liteav.tuiroom.ui.CreateRoomActivity
+ADDED from E:\androidproject\DentalHousekeeper\tuiroom\src\main\AndroidManifest.xml:12:9-15:66
+	android:screenOrientation
+		ADDED from E:\androidproject\DentalHousekeeper\tuiroom\src\main\AndroidManifest.xml:14:13-49
+	android:theme
+		ADDED from E:\androidproject\DentalHousekeeper\tuiroom\src\main\AndroidManifest.xml:15:13-63
+	android:name
+		ADDED from E:\androidproject\DentalHousekeeper\tuiroom\src\main\AndroidManifest.xml:13:13-76
+activity#com.tencent.liteav.tuiroom.ui.JoinRoomActivity
+ADDED from E:\androidproject\DentalHousekeeper\tuiroom\src\main\AndroidManifest.xml:17:9-20:66
+	android:screenOrientation
+		ADDED from E:\androidproject\DentalHousekeeper\tuiroom\src\main\AndroidManifest.xml:19:13-49
+	android:theme
+		ADDED from E:\androidproject\DentalHousekeeper\tuiroom\src\main\AndroidManifest.xml:20:13-63
+	android:name
+		ADDED from E:\androidproject\DentalHousekeeper\tuiroom\src\main\AndroidManifest.xml:18:13-74
+activity#com.tencent.liteav.tuiroom.ui.RoomMainActivity
+ADDED from E:\androidproject\DentalHousekeeper\tuiroom\src\main\AndroidManifest.xml:22:9-26:66
+	android:screenOrientation
+		ADDED from E:\androidproject\DentalHousekeeper\tuiroom\src\main\AndroidManifest.xml:25:13-49
+	android:launchMode
+		ADDED from E:\androidproject\DentalHousekeeper\tuiroom\src\main\AndroidManifest.xml:24:13-44
+	android:theme
+		ADDED from E:\androidproject\DentalHousekeeper\tuiroom\src\main\AndroidManifest.xml:26:13-63
+	android:name
+		ADDED from E:\androidproject\DentalHousekeeper\tuiroom\src\main\AndroidManifest.xml:23:13-74
+uses-sdk
+INJECTED from E:\androidproject\DentalHousekeeper\tuiroom\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from E:\androidproject\DentalHousekeeper\tuiroom\src\main\AndroidManifest.xml
+INJECTED from E:\androidproject\DentalHousekeeper\tuiroom\src\main\AndroidManifest.xml
+INJECTED from E:\androidproject\DentalHousekeeper\tuiroom\src\main\AndroidManifest.xml
+INJECTED from E:\androidproject\DentalHousekeeper\tuiroom\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from E:\androidproject\DentalHousekeeper\tuiroom\src\main\AndroidManifest.xml
+		ADDED from E:\androidproject\DentalHousekeeper\tuiroom\src\main\AndroidManifest.xml
+		INJECTED from E:\androidproject\DentalHousekeeper\tuiroom\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from E:\androidproject\DentalHousekeeper\tuiroom\src\main\AndroidManifest.xml
+		ADDED from E:\androidproject\DentalHousekeeper\tuiroom\src\main\AndroidManifest.xml
+		INJECTED from E:\androidproject\DentalHousekeeper\tuiroom\src\main\AndroidManifest.xml

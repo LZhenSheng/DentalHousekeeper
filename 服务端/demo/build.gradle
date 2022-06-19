@@ -1,0 +1,106 @@
+plugins {
+	id 'org.springframework.boot' version '2.5.8'
+	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+	id 'java'
+}
+
+group = 'com.example'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+repositories {
+	maven {
+		url 'https://maven.aliyun.com/repository/public/'
+	}
+	mavenLocal()
+	mavenCentral()
+}
+
+dependencies {
+	//引用当前项目根目录下libs目录所有jar包
+	implementation fileTree(dir: 'libs', includes: ['*.jar'])
+
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.projectlombok:lombok:1.18.20'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+	//mysql数据库驱动
+	runtimeOnly 'mysql:mysql-connector-java'
+
+	//mybatis数据库框架
+	implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:2.1.1'
+
+	//apache common lang3工具包
+	//提供了StringUtils等这样的类
+	//http://commons.apache.org/proper/commons-lang/
+	implementation 'org.apache.commons:commons-lang3:3.9'
+
+	//从Spring Boot 2.3开始，web框架中移除了validator，所以要添加手动添加
+	implementation 'org.springframework.boot:spring-boot-starter-validation'
+
+	implementation 'org.springframework.security:spring-security-core:5.2.1.RELEASE'
+
+	//模板框架
+//如果是做web开发，用该框架比较多
+//我们主要实现邮件模板
+	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+
+	//常用加密算法工具类
+//https://commons.apache.org/proper/commons-codec/
+	implementation group: 'commons-codec', name: 'commons-codec', version: '1.13'
+
+	//通过编译注解方式生成get,set等方法
+	compileOnly 'org.projectlombok:lombok'
+
+//编译注解处理器
+	annotationProcessor 'org.projectlombok:lombok'
+
+	//阿里云新版通用sdk
+//基本上可以调用所有服务
+//https://help.aliyun.com/document_detail/112148.html
+	implementation 'com.aliyun:aliyun-java-sdk-core:4.5.1'
+
+	//支付宝
+	//https://docs.open.alipay.com/54/106370
+	implementation 'com.alipay.sdk:alipay-sdk-java:4.10.97.ALL'
+
+	//swagger接口文档
+	implementation 'io.springfox:springfox-swagger2:2.9.2'
+	implementation 'io.springfox:springfox-swagger-ui:2.9.2'
+
+	//MyBatis通用分页插件
+//通过aop方法拦截sql，然后添加分页参数
+//https://github.com/pagehelper/pagehelper-spring-boot
+	implementation 'com.github.pagehelper:pagehelper-spring-boot-starter:1.2.13'
+
+	//阿里云OSS
+//用来在服务端操作阿里云OSS
+//我们这里目前来说并没有直接操作oss
+//所以可以不用集成
+//集成的目的是给大家讲解下
+//https://help.aliyun.com/document_detail/32009.html
+	implementation 'com.aliyun.oss:aliyun-sdk-oss:3.8.1'
+
+//阿里云STS SDK
+//用来生成临时访问阿里云服务token
+//我们这里用他生成临时oos token返回给客户端
+//可视化使用临时token上传文件到oss
+//https://help.aliyun.com/document_detail/28786.html
+	implementation 'com.aliyun:aliyun-java-sdk-sts:3.0.1'
+	implementation 'com.aliyun:aliyun-java-sdk-core:4.4.9'
+
+//应用监控
+//他包含了spring应用特有的信息
+//例如：自动配置，配置文件等信息
+//当然也有通用的信息，例如：cpu，内存等信息
+//真实项目中根据实际需求选择
+//如果只监控cpu，内存等信息，通过监控容器就可以实现了
+//同时这样也是通用的，其他语言项目也可以
+//如果还要监控：自动配置，配置文件等信息
+//就需要集成该依赖
+	implementation 'org.springframework.boot:spring-boot-starter-actuator'
+}
+
+test {
+	useJUnitPlatform()
+}

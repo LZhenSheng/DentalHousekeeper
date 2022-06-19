@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--主界面内容
+    也可以直接写到这里
+    这里放到多个文件中
+    主要是降低当前文件代码量-->
+    <!--左右滚动控件-->
+    <!--内容部分layout_behavior:用来控制内容区域-->
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <!--指示器-->
+        <!--        <net.lucode.hackware.magicindicator.MagicIndicator-->
+        <!--            android:background="@drawable/shape_border_gray"-->
+        <!--            android:id="@+id/mi"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="?attr/actionBarSize" />-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/white"
+            android:gravity="center">
+
+            <View style="@style/MyView" />
+
+            <ImageView
+                android:id="@+id/indicator_iv1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@mipmap/home_selected" />
+
+            <View
+                style="@style/MyView"
+                android:layout_weight="2" />
+
+            <ImageView
+                android:id="@+id/indicator_iv3"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@mipmap/notice" />
+
+            <View
+                style="@style/MyView"
+                android:layout_weight="2" />
+
+            <ImageView
+                android:id="@+id/indicator_iv4"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@mipmap/my" />
+
+            <View style="@style/MyView" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="8" />
+            <!--图标-->
+            <ImageView
+                android:id="@+id/iv_count"
+                android:layout_width="@dimen/icon_height_small"
+                android:layout_height="@dimen/icon_height_small"
+                android:layout_marginLeft="@dimen/padding_small"
+                android:layout_marginTop="10dp" />
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="6" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

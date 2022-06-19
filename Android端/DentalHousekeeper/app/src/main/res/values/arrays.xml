@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="dialog_comment_more">
+        <item>回复评论</item>
+        <item>复制评论</item>
+        <item>举报评论</item>
+    </string-array>
+
+    <!--性别选项-->
+    <string-array name="dialog_gender">
+        <item>保密</item>
+        <item>男</item>
+        <item>女</item>
+    </string-array>
+    <!--性别选项-->
+    <string-array name="administor_type">
+        <item>1-审核充值</item>
+        <item>2-审核发票</item>
+        <item>3-审核筹款</item>
+        <item>4-审核提现</item>
+        <item>5-审核举报</item>
+        <item>6-客服</item>
+        <item>7-审核物资捐赠</item>
+    </string-array>
+
+    <string-array name="delete">
+        <item>删除动态</item>
+    </string-array>
+
+    <string-array name="add_apply">
+        <item>申请筹款项目</item>
+        <item>申请物资捐赠项目</item>
+    </string-array>
+</resources>

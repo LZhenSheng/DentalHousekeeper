@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_gradient_login"
+    android:orientation="vertical">
+
+    <View style="@style/MyView" />
+
+    <RelativeLayout
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="75dp"
+            android:background="@drawable/shape_radius_background_white"
+            android:orientation="vertical"
+            android:padding="30dp"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp">
+
+            <EditText
+                android:layout_marginTop="50dp"
+                android:id="@+id/account"
+                style="@style/EditText"
+                android:textColor="@color/text"
+                android:layout_height="60dp"
+                android:textSize="15sp"
+                android:background="@drawable/shape_border_up"
+                android:gravity="center"
+                android:hint="@string/enter_account"
+                android:inputType="phone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal">
+
+                <!--验证码输入-->
+                <EditText
+                    android:id="@+id/verification_code"
+                    style="@style/EditText2"
+                    android:layout_height="match_parent"
+                    android:height="60dp"
+                    android:textSize="15sp"
+                    android:background="@drawable/shape_border_up"
+                    android:gravity="center"
+                    android:textColor="@color/text"
+                    android:hint="@string/enter_verification_code"
+                    android:inputType="phone" />
+
+                <!--发送验证码按钮-->
+                <Button
+                    android:id="@+id/send_sms_code"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="@dimen/button_width_large"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/transparent"
+                    android:text="@string/send_code"
+                    android:textColor="@drawable/selector_button_color_primary_light_grey" />
+            </LinearLayout>
+
+            <!--密码-->
+            <EditText
+                android:id="@+id/password"
+                style="@style/EditText"
+                android:layout_height="60dp"
+                android:textSize="15sp"
+                android:hint="@string/setting_password_specifications"
+                android:gravity="center"
+                android:textColor="@color/text"
+                android:background="@drawable/shape_border_up"
+                android:inputType="textPassword" />
+
+            <!--确认密码-->
+            <EditText
+                android:id="@+id/confirm_password"
+                style="@style/EditText"
+                android:hint="@string/please_confirm_password"
+                android:gravity="center"
+                android:layout_height="60dp"
+                android:textSize="15sp"
+                android:textColor="@color/text"
+                android:background="@drawable/shape_border_up"
+                android:inputType="textPassword" />
+
+            <!--注册-->
+            <Button
+                android:id="@+id/register"
+                style="@style/Button"
+                android:layout_height="60dp"
+                android:background="@drawable/shape_border_blue"
+                android:text="@string/register"
+                android:textColor="@color/main_color"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:background="@mipmap/logo"
+                android:stateListAnimator="@null" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <View
+        style="@style/MyView"
+        android:layout_weight="2" />
+
+</LinearLayout>

@@ -1,0 +1,41 @@
+<com.google.android.material.appbar.AppBarLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:theme="@style/AppTheme.AppBarOverlay"
+    android:elevation="0dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--Toolbar控件-->
+    <androidx.appcompat.widget.Toolbar
+        app:collapsedTitleGravity="center"
+        app:contentInsetStart="0dp"
+        app:contentInsetLeft="0dp"
+        app:titleMargin="0dp"
+        android:background="@color/main_color"
+        android:id="@+id/toolbar"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:popupTheme="@style/AppTheme.PopupOverlay" >
+
+        <RelativeLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/home"
+                android:layout_marginLeft="15dp"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@mipmap/left"/>
+            <TextView
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:id="@+id/title"
+                android:text="客服"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+</com.google.android.material.appbar.AppBarLayout>

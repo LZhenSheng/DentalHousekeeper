@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@color/main_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:layout_marginTop="28dp"
+        android:layout_marginRight="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/main_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:singleLine="true"
+            android:text="预约"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <!--内容部分layout_behavior:用来控制内容区域-->
+    <LinearLayout
+        style="@style/ToolbarContent">
+        <com.jwenfeng.library.pulltorefresh.PullToRefreshLayout
+            android:id="@+id/activity_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:id="@+id/user_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:orientation="horizontal">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        app:civ_border_color="#00000000"
+                        app:civ_border_width="5dp"
+                        android:id="@+id/avatar"
+                        android:layout_width="@dimen/avatar_width"
+                        android:layout_height="@dimen/avatar_width"
+                        android:src="@mipmap/doctor" />
+
+                    <LinearLayout
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:paddingBottom="20dp"
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:textColor="@color/white"
+                            android:id="@+id/nickName"
+                            android:textSize="20sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="未设置"/>
+                        <TextView
+                            android:textColor="@color/white"
+                            android:id="@+id/phone"
+                            android:textSize="15sp"
+                            android:layout_marginTop="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="180****1829"/>
+                    </LinearLayout>
+
+                    <View
+                        style="@style/MyView"
+                        android:layout_weight="5"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/my"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/radius_fill_blue"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:text="我的二维码"
+                        android:textColor="@android:color/white"
+                        android:textSize="20sp"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/exit"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/selector_color_primary"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:text="退出登录"
+                        android:textColor="@drawable/selector_text_color_primary_reverse"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </com.jwenfeng.library.pulltorefresh.PullToRefreshLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

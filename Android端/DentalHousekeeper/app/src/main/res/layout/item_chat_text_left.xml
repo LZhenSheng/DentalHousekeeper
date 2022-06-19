@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/padding_meddle">
+    <!--头像-->
+    <include layout="@layout/chat_message_avatar" />
+
+    <!--消息-->
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_marginTop="@dimen/padding_small"
+        android:textColor="@color/text"
+        android:layout_marginRight="@dimen/padding_message"
+        android:layout_marginLeft="@dimen/padding_meddle"
+        tools:text="这是消息内容这是消这是消息内容这是消这是消息内容这是消这是消息内容这是消这是消息内容这是消这是消息内容这是消这是消息内容这是消这是消息内容这是消"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lineSpacingMultiplier="@dimen/line_space"
+        android:background="@drawable/ic_chat_background_left" />
+</LinearLayout>

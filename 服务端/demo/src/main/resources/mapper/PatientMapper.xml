@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd"  >
+<!--指定要实现UserMapper-->
+<mapper namespace="com.example.demo.mapper.PatientMapper">
+
+    <!--创建对象
+    虽然可以通过别名的方式省略模型前面的包名
+    但是不建议用别名
+    防止我们的类和系统类冲突
+
+    设置数据值时，只有特殊类型采用指定jdbcType
+    对于mysql来说特殊类型有byte数组
+    日期，时间-->
+    <insert id="create" parameterType="com.example.demo.domin.Patient" useGeneratedKeys="true"
+            keyColumn="id">
+        <!--生成uuid主键-->
+        <selectKey keyProperty="id" resultType="java.lang.String" order="BEFORE">
+            select replace(uuid(),'-','') AS id
+        </selectKey>
+
+        insert into `patient`
+        (id, name, avatar,
+        birthday, phone,province,
+        city, area,password)
+        values(#{id}, #{name},#{avatar},
+        #{birthday,jdbcType=DATE},#{phone},#{province},
+        #{city},#{area},#{password} )
+    </insert>
+
+    <!--查询所有对象-->
+    <select id="findAll" resultType="com.example.demo.domin.Patient">
+        select * from `patient`
+    </select>
+
+    <!--根据id查询-->
+    <select id="find" resultType="com.example.demo.domin.Patient">
+        SELECT * FROM `patient` WHERE id = #{id}
+    </select>
+
+    <!--根据手机号查询-->
+    <select id="findByPhone" resultType="com.example.demo.domin.Patient">
+        SELECT * FROM `patient` WHERE phone = #{data}
+    </select>
+
+    <!--更新session-->
+    <update id="updateSessionDigest">
+        update `patient`
+        <set>
+            session_digest=#{data}
+        </set>
+        where id=#{id}
+    </update>
+
+    <!--更新用户信息像手机号，邮箱，密码等敏感字段不更新-->
+    <update id="update">
+        update `patient`
+        <set>
+            <if test="name != null and name != ''">
+                name = #{name},
+            </if>
+            <if test="avatar != null">
+                avatar = #{avatar},
+            </if>
+            <if test="gender != null">
+                gender = #{gender},
+            </if>
+            <if test="birthday != null">
+                birthday = #{birthday},
+            </if>
+            <if test="province != null">
+                province = #{province},
+            </if>
+            <if test="city != null">
+                city = #{city},
+            </if>
+            <if test="area != null">
+                area = #{area},
+            </if>
+        </set>
+        where id = #{id}
+    </update>
+
+    <!--更新验证码相关字段-->
+    <update id="updateCode">
+        update `patient`
+        <set>
+            code = #{data},
+            code_sent_at = now()
+        </set>
+        where id = #{id}
+    </update>
+
+
+    <!--更新验证码相关字段-->
+    <update id="updatePatientMessage">
+        update `patient`
+        <set>
+            name = #{name},
+            gender = #{gender},
+            province = #{province},
+            city=#{city},
+            area=#{area},
+            card=#{card},
+            age=#{age},
+            birthday=#{birthday},
+            avatar=#{avatar}
+        </set>
+        where id = #{id}
+    </update>
+
+    <!--更新验证码相关字段-->
+    <update id="updatePatientMessage1">
+        update `patient`
+        <set>
+            name = #{name},
+            gender = #{gender},
+            province = #{province},
+            city=#{city},
+            area=#{area},
+            card=#{card},
+            age=#{age},
+            birthday=#{birthday}
+        </set>
+        where id = #{id}
+    </update>
+
+    <!--查询所有对象-->
+    <select id="findPreorderByPatientId" resultType="com.example.demo.domin.PreOrder">
+        select * from `preorder` where id in (select preorder_id from appointment where patient_id = #{data})
+    </select>
+
+    <!--查询所有对象-->
+    <select id="findPatientByPhone" resultType="com.example.demo.domin.Patient" parameterType="com.example.demo.domin.Patient">
+        select * from `patient` where phone=#{phone}
+    </select>
+</mapper>

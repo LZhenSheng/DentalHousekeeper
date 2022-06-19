@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd"  >
+<!--指定要实现UserMapper-->
+<mapper namespace="com.example.demo.mapper.DoctorMapper">
+
+    <!--创建对象
+    虽然可以通过别名的方式省略模型前面的包名
+    但是不建议用别名
+    防止我们的类和系统类冲突
+
+    设置数据值时，只有特殊类型采用指定jdbcType
+    对于mysql来说特殊类型有byte数组
+    日期，时间-->
+    <insert id="create" parameterType="com.example.demo.domin.Doctor" useGeneratedKeys="true"
+            keyColumn="id">
+        <!--生成uuid主键-->
+        <selectKey keyProperty="id" resultType="java.lang.String" order="BEFORE">
+            select replace(uuid(),'-','') AS id
+        </selectKey>
+
+        insert into `doctor`
+        (id, name, avatar,
+        birthday, phone,province,
+        city, area,password)
+        values(#{id}, #{name},#{avatar},
+        #{birthday,jdbcType=DATE},#{phone},#{province},
+        #{city},#{area},#{password} )
+    </insert>
+
+    <!--查询所有对象-->
+    <select id="findAll" resultType="com.example.demo.domin.Doctor">
+        select * from `doctor`
+    </select>
+
+    <!--根据id查询-->
+    <select id="find" resultType="com.example.demo.domin.Doctor">
+        SELECT * FROM `doctor` WHERE id = #{id}
+    </select>
+
+    <!--根据手机号查询-->
+    <select id="findByPhone" resultType="com.example.demo.domin.Doctor">
+        SELECT * FROM `doctor` WHERE phone = #{data}
+    </select>
+
+    <!--更新session-->
+    <update id="updateSessionDigest">
+        update `doctor`
+        <set>
+            session_digest=#{data}
+        </set>
+        where id=#{id}
+    </update>
+
+    <!--更新用户信息像手机号，邮箱，密码等敏感字段不更新-->
+    <update id="update">
+        update `doctor`
+        <set>
+            <if test="name != null and name != ''">
+                name = #{name},
+            </if>
+            <if test="avatar != null">
+                avatar = #{avatar},
+            </if>
+            <if test="gender != null">
+                gender = #{gender},
+            </if>
+            <if test="birthday != null">
+                birthday = #{birthday},
+            </if>
+            <if test="province != null">
+                province = #{province},
+            </if>
+            <if test="city != null">
+                city = #{city},
+            </if>
+            <if test="area != null">
+                area = #{area},
+            </if>
+        </set>
+        where id = #{id}
+    </update>
+
+    <!--更新验证码相关字段-->
+    <update id="updateCode">
+        update `doctor`
+        <set>
+            code = #{data},
+            code_sent_at = now()
+        </set>
+        where id = #{id}
+    </update>
+
+    <insert id="createProOrder" parameterType="com.example.demo.domin.PreOrder">
+        insert into `preorder`
+        (id, doctor_id, date,
+        start_time, end_time,number,
+        money)
+        values(#{id}, #{doctorId},#{date},
+        #{startTime},#{endTime},#{number},
+        #{money})
+    </insert>
+
+    <!--更新验证码相关字段-->
+    <update id="updateMessage">
+        update `doctor`
+        <set>
+            name = #{name},
+            gender = #{gender},
+            province = #{province},
+            city=#{city},
+            area=#{area},
+            age=#{age},
+            birthday=#{birthday},
+            avatar=#{avatar},
+            email=#{email},
+            description=#{description}
+        </set>
+        where id = #{id}
+    </update>
+
+    <!--更新验证码相关字段-->
+    <update id="updateMessage1">
+        update `doctor`
+        <set>
+            name = #{name},
+            gender = #{gender},
+            province = #{province},
+            city=#{city},
+            area=#{area},
+            age=#{age},
+            birthday=#{birthday},
+            email=#{email},
+            description=#{description}
+        </set>
+        where id = #{id}
+    </update>
+
+    <!--查询所有对象-->
+    <select id="findHospital" resultType="String">
+        select distinct hospital from `doctor` where hospital!='NULL'
+    </select>
+
+    <!--查询所有对象-->
+    <select id="findDoctor" resultType="String">
+        select name from `doctor` where hospital = #{data}
+    </select>
+
+    <!--查询所有对象-->
+    <select id="findPreorder" resultType="com.example.demo.domin.PreOrder">
+        select * from `preorder` where doctor_id = #{id} and date = #{date}
+    </select>
+
+    <!--查询所有对象-->
+    <select id="findDoctorId" resultType="String">
+        select id from `doctor` where name = #{data}
+    </select>
+
+    <insert id="createAppointment" parameterType="com.example.demo.domin.AppointMent">
+        insert into `appointment`
+        (id, doctor_id, patient_id,preorder_id)
+        values(#{id}, #{doctorId},#{patientId},#{preorderId})
+    </insert>
+
+    <!--查询所有对象-->
+    <select id="findPreorderId" resultType="String">
+        select id from `preorder` where doctor_id = #{name} and date = #{date}
+    </select>
+
+    <!--查询所有对象-->
+    <select id="findAppointmentByPatientId" resultType="com.example.demo.domin.AppointMent">
+        select * from `appointment` where patient_id = #{data} order by created_at desc
+    </select>
+
+    <!--查询所有对象-->
+    <select id="findDoctorById" resultType="com.example.demo.domin.Doctor">
+        select * from `doctor` where id = #{data}
+    </select>
+
+    <!--查询所有对象-->
+    <select id="findPreorderById" resultType="com.example.demo.domin.PreOrder">
+        select * from `preorder` where id = #{data}
+    </select>
+
+    <!--查询所有对象-->
+    <select id="findPreorderByDoctorId" resultType="com.example.demo.domin.PreOrder">
+        select * from `preorder` where doctor_id = #{data}
+    </select>
+
+    <!--查询所有对象-->
+    <select id="findAppointmentByDoctorId" resultType="com.example.demo.domin.AppointMent">
+        select * from `appointment` where doctor_id = #{data} order by created_at desc
+    </select>
+
+    <update id="updatePreorder" parameterType="com.example.demo.domin.AppointMent">
+        update `preorder`
+        <set>
+            rest=rest-1
+        </set>
+        where id = #{preorderId} and rest>0
+    </update>
+
+    <!--查询所有对象-->
+    <select id="findDoctorByPhone" resultType="com.example.demo.domin.Doctor" parameterType="com.example.demo.domin.Doctor">
+        select * from `doctor` where phone=#{phone}
+    </select>
+
+    <update id="updateAppointMent">
+        update `appointment`
+        <set>
+            status=1
+        </set>
+        where id = #{data}
+    </update>
+
+    <!--查询所有对象-->
+    <select id="findAppointmentById" resultType="com.example.demo.domin.AppointMent">
+        select * from `appointment` where id = #{data}
+    </select>
+
+    <delete id="deleteAppointMent">
+        delete from `appointment` where id=#{id} and status is null
+    </delete>
+    <insert id="createGroupConsultation" parameterType="com.example.demo.domin.GroupConsultation" useGeneratedKeys="true"
+            keyColumn="id">
+        <!--生成uuid主键-->
+        <selectKey keyProperty="id" resultType="java.lang.String" order="BEFORE">
+            select replace(uuid(),'-','') AS id
+        </selectKey>
+
+        insert into `groupconsultation`
+        (id, date, start, reback)
+        values(#{id}, #{date},#{start}, #{reback} )
+    </insert>
+
+    <select id="findGroupConsultations" resultType="com.example.demo.domin.GroupConsultation">
+        select * from `groupconsultation` where start = #{data} or reback=#{data} order by date desc
+    </select>
+
+    <insert id="savePayment" parameterType="com.example.demo.domin.Payment" useGeneratedKeys="true"
+            keyColumn="id">
+        <!--生成uuid主键-->
+        <selectKey keyProperty="id" resultType="java.lang.String" order="BEFORE">
+            select replace(uuid(),'-','') AS id
+        </selectKey>
+        insert into `payment`
+        (id, patient, doctor, hospital,preorder,money,appointment)
+        values(#{id}, #{patient},#{doctor}, #{hospital},#{preorder},#{money},#{appointment} )
+    </insert>
+
+    <!--查询所有对象-->
+    <select id="findAppointmentByAppointmentId" resultType="com.example.demo.domin.AppointMent">
+        select * from `appointment` where id = #{id}
+    </select>
+
+    <!--查询所有对象-->
+    <select id="findPreorderByAppointmentId" resultType="com.example.demo.domin.PreOrder">
+        select * from `preorder` where id in (select preorder_id from  `appointment` where id =#{id})
+    </select>
+
+    <!--查询所有对象-->
+    <select id="findERecordByAppointmentId" resultType="com.example.demo.domin.EReocrd">
+        select * from `erecord` where appointment=#{id}
+    </select>
+</mapper>
