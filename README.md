@@ -5,9 +5,9 @@
 
 <img src="https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/2.jpg" width="500"/>
 
-<img src="https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/3.jpg" width="500"/>
+<img src="https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/3.jpg" width="700"/>
 
-<img src="https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/4.jpg" width="500"/>
+<img src="https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/4.jpg" width="700"/>
 
 <img src="https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/5.jpg" width="700"/>
 
