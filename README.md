@@ -25,14 +25,8 @@
 
 <img src="https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/13.jpg" width="700"/>
 
-<img src="https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/14.jpg" width="400"/>
-
-<img src="https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/15.jpg" width="400"/>
-
-<img src="https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/16.jpg" width="400"/>
-
-<img src="https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/17.jpg" width="400"/>
-
+| <img src="https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/14.jpg" width="400"/>  | <img src="https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/15.jpg" width="400"/> |
+| <img src="https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/16.jpg" width="400"/>  | <img src="https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/17.jpg" width="400"/> |
 <img src="https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/18.jpg" width="400"/>
 
 <img src="https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/19.jpg" width="400"/>
