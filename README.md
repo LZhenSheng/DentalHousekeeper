@@ -1,6 +1,7 @@
 # 查重中，放一些界面和总结
 ## 1.主要工作
 <img src="https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/图片1.png" width="800"/>
+
 ## 2.界面
 <img src="https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/25.jpg" width="800"/>
 
