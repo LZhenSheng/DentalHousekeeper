@@ -37,6 +37,10 @@
 
 <img src="https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/24.jpg" width="400"/>
 
+## 尚未实现功能
+（1）图像融合
+
+（2）图像分割：数据集比较少，而图像的特征又特别明显，导致使用公开数据集训练的模型在预测时分割效果特别不好
 ## 不足之处
 （1）Android和Windows端使用的都是原生UI，界面一般--------Android可以使用XUI和QUMI，Windows端可以使用fx-falsework（发现了问题，但已经是毕设后期，重新改UI不太现实）
 
