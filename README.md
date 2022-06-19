@@ -1,12 +1,12 @@
 # 查重中，放一些界面和总结
 ## 1.主要工作
-<img src="https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/图片1.png" width="800"/>
+![1655494134977](https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/图片1.png)
 
 ## 2.意义
-<img src="https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/图片2.png" width="800"/>
+![1655494134977](https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/图片2.png)
 
 ## 3.系统层次结构图
-<img src="https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/图片3.png" width="800"/>
+![1655494134977](https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/图片3.png)
 
 ## 4.界面
 <img src="https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/25.jpg" width="800"/>
