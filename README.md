@@ -27,7 +27,7 @@
 
 ![1655494134977](https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/13.jpg)
 
-<img src="https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/14.jpg" width="200" height="200" alt="抖音小程序"/><br/>
+<img src="https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/14.jpg" width="300"/><br/>
 
 ![1655494134977](https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/15.jpg)
 
