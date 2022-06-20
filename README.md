@@ -3,14 +3,17 @@
 <div  align=center>
  <img src="https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/图片1.png"/>
 </div>
+
 ## 2.意义
 <div  align=center>
  <img src="https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/图片2.png"/>
 </div>
+
 ## 3.系统层次结构图
 <div  align=center>
  <img src="https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/图片3.png"/>
 </div>
+
 ## 4.界面
 <div  align=center>
  <img src="https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/25.jpg"/>
@@ -57,7 +60,22 @@
 <div  align=center>
  <img src="https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/13.jpg"/>
 </div>
-<img src="https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/14.jpg" width="400"/><img src="https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/15.jpg" width="400"/><img src="https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/16.jpg" width="400"/><img src="https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/17.jpg" width="400"/><img src="https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/18.jpg" width="400"/><img src="https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/19.jpg" width="400"/><img src="https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/20.jpg" width="400"/><img src="https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/21.png" width="400"/><img src="https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/22.png" width="400"/><img src="https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/23.jpg" width="400"/><img src="https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/24.jpg" width="400"/>
+<div  align=center>
+<img src="https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/14.jpg" width="400"/><img src="https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/15.jpg" width="400"/>
+</div>
+<div  align=center>
+<img src="https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/16.jpg" width="400"/><img src="https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/17.jpg" width="400"/>
+</div>
+<div  align=center>
+<img src="https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/18.jpg" width="400"/><img src="https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/19.jpg" width="400"/>
+</div>
+<div  align=center>
+<img src="https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/20.jpg" width="400"/><img src="https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/21.png" width="400"/>
+</div>
+<div  align=center>
+<img src="https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/22.png" width="400"/><img src="https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/23.jpg" width="400"/>
+</div>
+<img src="https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/24.jpg" width="400"/>
 
 ## 5.尚未实现功能
 （1）图像融合
