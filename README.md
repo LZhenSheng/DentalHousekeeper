@@ -22,7 +22,7 @@
 | Windows端  | Idea、JavaFX Scene Builder |
 | 服务端  | Idea、Sqlyog、Postman |
 ### 4.2处理框架
-|  类型   | 软件  |
+|  类型   | 框架  |
 |  ----  | ----  |
 | Windows端界面框架  | JavaFX |
 | Dicom处理框架  | DCM4CHE |
@@ -115,6 +115,6 @@
 
 （2）DICOM标注结果没有分享功能--------Android可以使用MobSDK分享、保存本地，Windows端可以保存到本地（发现了问题，不过是在答辩结束后）
 ## 8.缺点
-（1）没有看完相关论文---------（知网相关论文很多，没有及时的参考）
+（1）没有养成查看论文的习惯
 
 [我的博客](https://blog.csdn.net/weixin_44575660?type=blog)
