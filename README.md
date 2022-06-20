@@ -14,8 +14,6 @@
  <img src="https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/图片3.png"/>
 </div>
 
-## 4.开发环境和框架
-
 ## 4.界面
 <div  align=center>
  <img src="https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/25.jpg"/>
@@ -62,9 +60,11 @@
 <div  align=center>
  <img src="https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/13.jpg"/>
 </div>
+
 <div  align=center>
 <img src="https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/14.jpg" width="400"/><img src="https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/15.jpg" width="400"/>
 </div>
+
 <div  align=center>
 <img src="https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/16.jpg" width="400"/><img src="https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/17.jpg" width="400"/>
 </div>
