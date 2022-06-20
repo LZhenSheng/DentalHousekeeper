@@ -1,5 +1,3 @@
-[我的博客](https://blog.csdn.net/weixin_44575660?type=blog)
-
 # 牙医管家客户端的设计与开发
 ## 1.主要工作
 <div  align=center>
@@ -93,3 +91,5 @@
 （2）DICOM标注结果没有分享功能--------Android可以使用MobSDK分享、保存本地，Windows端可以保存到本地（发现了问题，不过是在答辩结束后）
 ## 7.缺点
 （1）没有看完相关论文---------（知网相关论文很多，没有及时的参考）
+
+[我的博客](https://blog.csdn.net/weixin_44575660?type=blog)
