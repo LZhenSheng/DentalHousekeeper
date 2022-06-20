@@ -15,6 +15,10 @@
 
 ![1655494134977](https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/26.jpg)
 
+<center class="half">
+  <img src="https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/1.jpg"/>
+ </center>
+ 
 ![1655494134977](https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/1.jpg)
 
 ![1655494134977](https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/2.jpg)
