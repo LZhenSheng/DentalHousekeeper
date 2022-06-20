@@ -1,13 +1,16 @@
 # 查重中，放一些界面和总结
 ## 1.主要工作
-![1655494134977](https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/图片1.png)
-
+<div  align=center>
+ <img src="https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/图片1.jpg"/>
+</div>
 ## 2.意义
-![1655494134977](https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/图片2.png)
-
+<div  align=center>
+ <img src="https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/图片2.jpg"/>
+</div>
 ## 3.系统层次结构图
-![1655494134977](https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/图片3.png)
-
+<div  align=center>
+ <img src="https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/图片3.jpg"/>
+</div>
 ## 4.界面
 <div  align=center>
  <img src="https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/25.jpg"/>
@@ -21,8 +24,12 @@
 <div  align=center>
  <img src="https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/2.jpg"/>
 </div>
-
-![1655494134977](https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/3.jpg)
+<div  align=center>
+ <img src="https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/3.jpg"/>
+</div>
+<div  align=center>
+ <img src="https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/4.jpg"/>
+</div>
 
 ![1655494134977](https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/4.jpg)
 
