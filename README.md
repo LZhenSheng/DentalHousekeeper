@@ -9,7 +9,9 @@
 ![1655494134977](https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/图片3.png)
 
 ## 4.界面
-![1655494134977](https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/25.jpg)
+ <center class="half">
+ ![1655494134977](https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/25.jpg)
+ </center>
 
 ![1655494134977](https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/26.jpg)
 
