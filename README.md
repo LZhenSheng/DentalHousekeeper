@@ -75,7 +75,9 @@
 <div  align=center>
 <img src="https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/22.png" width="400"/><img src="https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/23.jpg" width="400"/>
 </div>
-<img src="https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/24.jpg" width="400"/>
+<div  align=center>
+ <img src="https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/24.jpg" width="400"/>
+</div>
 
 ## 5.尚未实现功能
 （1）图像融合
