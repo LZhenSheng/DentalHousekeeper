@@ -1,3 +1,5 @@
+[我的博客](https://blog.csdn.net/weixin_44575660?type=blog)
+
 # 牙医管家客户端的设计与开发
 ## 1.主要工作
 <div  align=center>
@@ -13,6 +15,8 @@
 <div  align=center>
  <img src="https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/图片3.png"/>
 </div>
+
+## 4.开发环境和框架
 
 ## 4.界面
 <div  align=center>
