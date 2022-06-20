@@ -1,4 +1,4 @@
-# 查重中，放一些界面和总结
+# 牙医管家客户端的设计与开发
 ## 1.主要工作
 <div  align=center>
  <img src="https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/图片1.png"/>
