@@ -14,6 +14,30 @@
  <img src="https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/图片3.png"/>
 </div>
 
+## 4.开发环境
+### 4.1开发软件
+|  类型   | 软件  |
+|  ----  | ----  |
+| Android端  | Android Studio、玲珑模拟器 |
+| Windows端  | Idea、JavaFX Scene Builder |
+| 服务端  | Idea、Sqlyog、Postman |
+### 4.2处理框架
+|  类型   | 软件  |
+|  ----  | ----  |
+| Windows端界面框架  | JavaFX |
+| Dicom处理框架  | DCM4CHE |
+| 数字图像化处理-Windows  | OpenCV |
+| 数字图像化处理-Android  | GpuImage |
+| 标注-Windows  | JavaFX |
+| 标注-Android  | Canvas |
+| 服务端框架  | SpringBoot+Mybatis |
+| 支付  | 支付宝支付 |
+| 文件存储  | 阿里云OSS |
+| 短信服务  | 阿里云短信服务 |
+| 服务器  | 腾讯云 |
+| 数据库  | Mysql |
+| 图片处理框架-Android  | Glide |
+| 视频会议  | 腾讯云实时音视频服务 |
 ## 4.界面
 <div  align=center>
  <img src="https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/25.jpg"/>
