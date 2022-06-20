@@ -9,19 +9,18 @@
 ![1655494134977](https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/图片3.png)
 
 ## 4.界面
- <div  align=center>
-  <img src="https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/25.jpg"/>
- </div>
-
-![1655494134977](https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/26.jpg)
-
- <div  align=center>
-  <img src="https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/1.jpg"/>
- </div>
- 
-![1655494134977](https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/1.jpg)
-
-![1655494134977](https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/2.jpg)
+<div  align=center>
+ <img src="https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/25.jpg"/>
+</div>
+<div  align=center>
+ <img src="https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/26.jpg"/>
+</div>
+<div  align=center>
+ <img src="https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/1.jpg"/>
+</div>
+<div  align=center>
+ <img src="https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/2.jpg"/>
+</div>
 
 ![1655494134977](https://github.com/lijianxing66628/DentalHousekeeper/blob/main/images/3.jpg)
 
